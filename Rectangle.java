@@ -16,7 +16,7 @@ public class Rectangle {
 	public Rectangle(Point A, Point B, Point C, Point D) throws RecException{
 		Point a = new Point(A.x-B.x, A.y-B.y);
 		Point b = new Point(C.x-D.x, C.y-D.y);
-		if (!(a == b && A.x * B.x + A.y * B.y == 0))
+		if (!(a.x == b.x && a.y == b.y && A.x * B.x + A.y * B.y == 0))
 			throw new RecException("Not a rectangle");
 		else
 			this.A = A;
