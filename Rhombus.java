@@ -1,4 +1,4 @@
-package Lab4;
+package lab4;
 
 class RhombusException extends Exception {
 	public RhombusException(String message) {
